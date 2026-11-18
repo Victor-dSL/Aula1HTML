@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--meta: tag para configurações -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - HTML</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #e3e3e3;
+        }
+        .mode {
+            background-color: #ff3a89;
+        }
+    </style>
+    <main>
+        <button onclick="mudartema()">Alterar tema</button>
+        <h1 id="titulo">Desenvolvimento Web</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nostrum id vitae quaerat vel, strong<Teste!></Teste>accusantium consequatur illo placeat deserunt enim rem maxime harum ad nemo dicta? Eligendi fugit odio odit?</p>
+        <h2>HTML - Linguagem de Marcação de Hipertexto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, fuga.</p>
+        <h6>Último nível de título</h6>
+            <a ahref="https://google.com.br"></ahref>Ir para Google</a>
+        <a href="">Ir para detalhes <target="_blanck" rel=""noopener noreferrer"> Ir para detalhes</a>
+        <img src="https://www.svgrepo.com/show/502707/html.svg" widht="100" height="50">
+    </main>
+    <script>
+        function mudartema() {
+            document.body.classList.toggle('mode');
+            
+            const titulo = document.getElementById('titulo');
+            
+            if (document.body.classList.contains('mode')) {
+                titulo.textContent = 'Desenvolvimento Pink ai papi que guapo'; // Novo texto
+            } else {
+                titulo.textContent = 'Desenvolvimento Web'; // Texto original
+            }
+        }
+    </script>
+</body>
+</html>
